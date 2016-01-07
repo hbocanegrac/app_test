@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<configuration>
+	<email>
+		<server>email.example.com</server>
+		<account>xt0397@rimac.com.pe</account>
+		<password>abc123</password>
+		<port>995</port>
+		<connection>pop3</connection>
+	</email>
+
+	<ftp>
+		<server>192.168.1.0</server>
+		<account>xt0397</account>
+		<password>abc123</password>
+		<port>21</port>
+		<connection>ftp</connection>
+		<mode>passive</mode>
+	</ftp>
+
+	<file>
+		<download>C:\download</download>
+		<upload>C:\upload</upload>
+		<extension>txt</extension>
+		<delimiter>9</delimiter>
+		<log>C:\download_email.log</log>
+	</file>
+
+	<mapping>
+		<filter>
+			<from>@gmail.com</from>
+		</filter>
+		<folder>ftp1</folder>
+	</mapping>
+	<mapping>
+		<filter>
+			<from>@gmail.com</from>
+			<subject>FACTURA -</subject>
+		</filter>
+		<folder>ftp2</folder>
+	</mapping>
+	<mapping>
+		<filter>
+			<from>@gmail.com</from>
+			<subject>FACTURA -</subject>
+			<filename>SUPPLY</filename>
+		</filter>
+		<folder>ftp3</folder>
+	</mapping>
+</configuration>
