@@ -15,8 +15,6 @@ import org.jdom2.input.sax.XMLReaderXSDFactory;
 public class XmlReader {
 	
 	public static void main (String args[]){
-		
-
 	    try {
 	    	
 	    	File xsdFile = new File("test.xsd");
