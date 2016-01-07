@@ -32,7 +32,7 @@ public class XmlReader {
 	        List<Element> lstMapping 	= rootNode.getChildren("mapping");
 	        
 	        System.out.println("Email");
-	        System.out.println("---------------------------------------");
+	        System.out.println("-----------------------------------------");
 	        System.out.println("server:"+email.getChildText("server"));
 	        System.out.println("account:"+email.getChildText("account"));
 	        System.out.println("password:"+email.getChildText("password"));
@@ -40,7 +40,7 @@ public class XmlReader {
 	        System.out.println("connection:"+email.getChildText("connection"));
 	        
 	        System.out.println("Ftp");
-	        System.out.println("---------------------------------------");
+	        System.out.println("-----------------------------------------");
 	        
 	        System.out.println("server:"+ftp.getChildText("server"));
 	        System.out.println("account:"+ftp.getChildText("account"));
@@ -50,7 +50,7 @@ public class XmlReader {
 	        System.out.println("mode:"+ftp.getChildText("mode"));
 	        
 	        System.out.println("File");
-	        System.out.println("---------------------------------------");
+	        System.out.println("-----------------------------------------");
 	        
 	        System.out.println("download:"+file.getChildText("download"));
 	        System.out.println("upload:"+file.getChildText("upload"));
@@ -60,7 +60,7 @@ public class XmlReader {
 	        System.out.println("log:"+file.getChildText("log"));
 	        
 	        System.out.println("Mapping");
-	        System.out.println("---------------------------------------");
+	        System.out.println("-----------------------------------------");
 	        for (Iterator<Element> iterator = lstMapping.iterator(); iterator.hasNext();) {
 				Element mapping = iterator.next();
 				Element filter	= mapping.getChild("filter");
